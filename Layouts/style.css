@@ -1,0 +1,256 @@
+/* 
+*/
+@font-face {font-family: 'AbsinetteInline'; 
+    src: url('Base/AbsinetteInline.otf') format('truetype'); font-weight: normal; font-style: normal}
+@font-face {font-family: 'MVBoli'; 
+    src: url('Base/MVBoli.woff2') format('woff'); src:url('fonts/MVBoli.svg') format('svg');
+    src: url('Base/MVBoli.otf') format('truetype'); font-weight: normal; font-style: normal}
+@font-face {font-family : 'font';
+    src: url('Base/font.woff'); font-weight: normal; font-style: normal}
+
+@media all and (min-width: 2000px)
+{
+    header .headerLogo
+    {
+/*
+        position: relative;
+        width: 99%;
+        height: 10.7rem;
+        font-size : 6rem;
+        color:hsla(0, 0%, 4%, 0.75);
+        letter-spacing: 2.6rem;
+        font-weight: 1000;
+        z-index: 2;
+        text-align : center;
+        text-shadow: 0px 3px 1px rgba(240, 240, 240, 0.5);
+        animation: blur 1.25s ease-in-out forwards;
+        border: 1px solid blue ;  
+        */ 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+    }
+}
+
+#mainWrapper
+{
+    width: 1024px;
+    margin : auto;
+    /*
+    border: 1px dashed black;
+*/
+}
+
+body
+{
+    font-family : 'font', 'Times New Roman', Times, serif;
+    width : 99%;
+    height: fit-content;
+    background-image: url('Base/TatamisBackground1920x200.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    /*   
+    border: 2px dashed black;
+*/
+}
+
+header
+{
+    width: 100%;
+    height: 11rem;
+    /*   
+    border: 1px dashed green;
+*/
+}
+
+    .headerLogo
+    {
+        position: relative;
+        width: 99%;
+        height: 10.7rem;
+        font-size : 8rem;
+        font-family: 'MV Boli', 'font', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:hsla(0, 0%, 4%, 0.75);
+        letter-spacing: 2.6rem;
+        font-weight: 700;
+        z-index: 2;
+        text-align : center;
+        text-shadow: 0px 3px 1px rgba(240, 240, 240, 0.5);
+        animation: blur 1.25s ease-in-out forwards;
+        /*    
+        border: 1px solid green ;  
+*/
+    }
+    
+    @keyframes blur
+    {
+        from 
+        {
+            text-shadow : 0px 0px 10px #fff,
+            0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 10px #fff,
+            0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 10px #fff,
+            0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 10px #fff,
+            0px 0px 10px #ece6e8a1, 0px 0px 10px #ece6e8a1, 0px 0px 10px #ece6e8a1,
+            0px 0px 10px #ece6e8a1, 0px 10px 100px #ece6e8, 0px 10px 100px #ece6e8,
+            0px -2px 10px #ece6e8a1, 0px -2px 10px #ece6e8a1;
+        }
+    }
+
+    .oRed
+    {
+        width: 53%;
+        height: 10.7rem;
+        position: absolute;
+        z-index : 1;
+        /*
+        border: 2px dotted green ;
+*/
+    }
+
+
+                                        /*    .icone
+    {
+        position : relative;
+        transform : translate(0, 0);
+        opacity : 0.7;
+        stroke-dasharray: 4200px; /*met en pointillé 
+        stroke-dashoffset: 4200px; /*produit le décalage des pointillés
+        animation : anim 6s ease-in-out forwards; /*le paramètre 'forward' 
+        permet de s'arrêter à la fin de l'animation et non au point de départ 
+        = stroke-dashoffset : 4200
+
+       border: 2px dotted green;
+    }
+*/    
+        
+
+section
+{
+    display : flex;
+    flex-direction: column;
+    margin-top : 3rem;
+    /*    
+    border: 1px dashed red;
+*/
+}
+
+    .icone
+    {
+        position : relative;
+        width: 100%;
+        height: 4rem;
+        opacity : 0.7;
+        stroke-dasharray: 4200px; 
+        stroke-dashoffset: 4200px; 
+        animation : anim 3s ease-in forwards; 
+        /*
+        border: 2px solid red ;
+*/
+    }
+
+    @keyframes anim {
+        to 
+        {
+            stroke-dashoffset : 0;
+        }
+    }
+
+nav a 
+{
+    text-decoration: none;
+    /*
+    border: 1px solid black; 
+    */
+}
+
+    .indexUl
+    {
+        padding-top : 1rem;
+        display : flex;
+        justify-content:space-between;
+        font-family :'font', Tahoma, sans-serif, sans-serif;
+        font-size: 1rem;
+        list-style-type: none;
+        height: 3rem;
+        color : white;
+        /*    
+        border: 1px solid red; 
+*/
+    }
+
+
+    .indexLi
+    {
+        text-align: center;
+        height : 1.37rem;
+        min-width: 7rem;
+        color : black;
+        font-weight: bold;
+        height: 1.5rem;
+        /*
+        border: 1px dotted red;
+*/
+    }
+
+    .pageBackground
+    {
+        text-align: center;
+        /*
+        border: 2px dashed black;
+*/
+    }
+
+    .contacts
+    {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 5rem;
+        /*
+        border: 3px dashed red;
+*/
+    }
+
+
+footer
+{
+    width: 87%;
+    height: 10rem;
+    display : flex;
+    justify-content : space-between;
+    margin-top : 3em;
+    padding-left: 4em;
+    padding-right: 4em;
+    /*
+    border: 1px dashed blue;
+*/
+}
+
+/*
+    .horaires
+    {
+        text-align: center;
+        font-size: 1.5em;
+        padding-left: 2em;
+    }
+
+table
+{
+    font-weight: bold;
+    font-size : 0.8em;
+    display : flex;
+    justify-content: center;
+    border-collapse : collapse;
+}
+
+td
+{
+    border : 0.05em solid black;
+    font-size : 0.8em;
+}
+
+tr
+{
+    font-size : 2em;
+}
+
